@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Archivo:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--gold:#F2B705;--green:#0B5D2E;--gold:#F2B705;--navy:#0A1F14;--surface:#ffffff;--bg:#f4f7f2;--ink:#0A1F14;--muted:#5a6b5f}
+@media (prefers-color-scheme: dark){:root{--surface:#0f2418;--bg:#07130c;--ink:#f2f7f0;--muted:#a8bcab}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Archivo,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.oswald{font-family:Oswald,Archivo,sans-serif}
+button{cursor:pointer}
+input,select,textarea{font:inherit}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--green);border-radius:99px}
+
+/* Modern club-site refinements */
+html{scroll-behavior:smooth}
+::selection{background:#f2b705;color:#0a1f14}
+button,a{transition:transform .16s ease,filter .16s ease}
+button:hover{filter:brightness(1.06)}
+img{max-width:100%}
+:focus-visible{outline:3px solid #f2b705;outline-offset:3px}
+@media(max-width:640px){body{font-size:15px}}
